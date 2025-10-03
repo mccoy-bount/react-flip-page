@@ -1,0 +1,75 @@
+{
+  "name": "react-flip-page",
+  "author": "McCoy",
+  "version": "0.1.0",
+  "description": "A React TS component that implements page-flipping animation with 3D effects.",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mccoy-bount/react-flip-page"
+  },
+  "homepage": "https://mccoy-bount.github.io/react-flip-page/",
+  "type": "module",
+  "main": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "rematrix": "^0.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@babel/preset-typescript": "^7.22.0",
+    "@eslint/js": "^9.33.0",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.4.1",
+    "prettier-eslint-cli": "^8.0.1",
+    "rollup": "^3.0.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "@parcel/transformer-sass": "^2.9.3",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "gh-pages": "^6.0.0",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ],
+  "pnpm": {
+    "overrides": {}
+  }
+}

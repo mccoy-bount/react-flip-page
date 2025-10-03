@@ -1,0 +1,61 @@
+.viewport {
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+}
+
+.viewport.zoom {
+  overflow: scroll;
+}
+
+.flip-book-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: top left;
+  user-select: none;
+}
+
+.click-to-flip {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  user-select: none;
+}
+
+.click-to-flip.left {
+  left: 0;
+}
+
+.click-to-flip.right {
+  right: 0;
+}
+
+.bounding-box {
+  position: absolute;
+  user-select: none;
+}
+
+.page {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.polygon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  transform-origin: center left;
+}
+
+.polygon.blank {
+  background-color: #ddd;
+}
+
+.polygon .lighting {
+  width: 100%;
+  height: 100%;
+}
