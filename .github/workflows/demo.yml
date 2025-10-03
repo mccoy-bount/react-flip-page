@@ -39,8 +39,17 @@ jobs:
       - run: pnpm i && pnpm build
       - run: cd examples/demo && pnpm i && pnpm build
 
-      - name: Deploy
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # 指定你要部署的静态文件目录
+          path: ./examples/demo/dist
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./examples/demo/dist
+          token: ${{ secrets.GITHUB_TOKEN }}
