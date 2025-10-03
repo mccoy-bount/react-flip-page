@@ -11,15 +11,15 @@ importers:
 
   .:
     dependencies:
-      flipbook-react:
-        specifier: link:../../../../Library/pnpm/global/5/node_modules/flipbook-react
-        version: link:../../../../Library/pnpm/global/5/node_modules/flipbook-react
       react:
         specifier: ^19.1.1
         version: 19.2.0
       react-dom:
         specifier: ^19.1.1
         version: 19.2.0(react@19.2.0)
+      react-flip-page:
+        specifier: link:../..
+        version: link:../..
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.2.0)

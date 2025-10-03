@@ -6,7 +6,7 @@
   ],
   "compilerOptions": {
     "paths": {
-      "flipbook-react": ["../../dist"]
+      "react-flip-page": ["../../dist"]
     }
   }
 }
