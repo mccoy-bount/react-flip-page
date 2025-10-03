@@ -37,4 +37,5 @@ jobs:
       - name: Deploy
         uses: actions/deploy-pages@v2
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./examples/demo/dist
