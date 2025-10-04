@@ -1,7 +1,7 @@
 {
   "name": "flip-book-react",
   "author": "McCoy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A React TS component that implements page-flipping animation with 3D effects.",
   "private": false,
   "repository": {
