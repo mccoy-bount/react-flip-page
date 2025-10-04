@@ -19,6 +19,12 @@ jobs:
         with:
           node-version: 22
 
+      - name: Configure baseurl for GitHub Pages
+        run: |
+          # 这里以项目页面为例，设置 baseurl 为仓库名
+          # 对于用户或组织站点 (username.github.io)，你可能需要将 baseurl 设置为空
+          echo "baseurl: /${{ github.event.repository.name }}" >> _config.yml
+
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: 7
