@@ -1,7 +1,7 @@
 import { forwardRef, useRef, useState } from 'react'
 import './App.css'
-import { FlipBook } from 'react-flip-page'
-import 'react-flip-page/style.css'
+import { FlipBook } from 'flip-book-react'
+import 'flip-book-react/styles.css'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const FlipBookComponent = forwardRef(FlipBook)
@@ -16,8 +16,6 @@ function App() {
 
   function flipRight() {
     flipBookRef.current?.flipRight()
-    if (page >= 6) return
-    setPage(page + 2)
   }
 
   const disabled = false

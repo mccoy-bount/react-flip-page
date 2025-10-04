@@ -4,7 +4,6 @@ import type { FlipBookProps, FlipBookHandle, SwipeEvent } from './interface'
 import Matrix from './matrix'
 import { addTask as addAnimationTask } from './animationTask'
 import { easeInOut } from './utils'
-// import 'style.css'
 
 let touchStartX = null
 let touchStartY = null

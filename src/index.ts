@@ -1,3 +1,3 @@
-import FlipBook from './FilpBook'
+import FlipBook from './FlipBook'
 
 export { FlipBook }

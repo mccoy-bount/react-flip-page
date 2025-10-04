@@ -13,6 +13,7 @@ function easeInOut(x) {
     return 0.5 + easeOut((x - 0.5) * 2) / 2
   }
 }
+
 // 节流函数实现
 function throttle(func, delay) {
   let lastExecTime = 0
@@ -45,10 +46,4 @@ function throttle(func, delay) {
   }
 }
 
-
-export {
-  easeIn,
-  easeOut,
-  easeInOut,
-  throttle
-}
+export { easeIn, easeOut, easeInOut, throttle }

@@ -1,70 +1,77 @@
 {
-  "name": "react-flip-page",
+  "name": "flip-book-react",
   "author": "McCoy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React TS component that implements page-flipping animation with 3D effects.",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/mccoy-bount/react-flip-page"
+    "url": "https://github.com/mccoy-bount/flip-book-react"
   },
-  "homepage": "https://mccoy-bount.github.io/react-flip-page/",
+  "homepage": "https://mccoy-bount.github.io/flip-book-react/",
+  "keywords": [
+    "react"
+  ],
   "type": "module",
-  "main": "./dist/index.esm.js",
-  "types": "./dist/index.d.ts",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/index.umd.js",
   "files": [
-    "dist"
+    "dist/index.js",
+    "dist/index.es.js",
+    "dist/index.umd.js",
+    "dist/index.d.ts",
+    "dist/styles.css"
   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
+      "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     },
     "./style.css": "./dist/style.css"
   },
   "scripts": {
-    "dev": "rollup -c rollup.config.js --watch",
-    "build": "rollup -c rollup.config.js",
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
     "lint": "eslint ."
   },
   "dependencies": {
-    "rematrix": "^0.7.2"
+    "rematrix": "^0.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.0",
-    "@babel/preset-env": "^7.22.0",
-    "@babel/preset-react": "^7.22.0",
-    "@babel/preset-typescript": "^7.22.0",
-    "@eslint/js": "^9.33.0",
+    "@eslint/js": "^9.36.0",
     "@parcel/transformer-sass": "^2.9.3",
-    "@rollup/plugin-babel": "^6.0.0",
-    "@rollup/plugin-commonjs": "^25.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.0",
     "@rollup/plugin-replace": "^5.0.2",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^6.0.0",
-    "globals": "^16.3.0",
     "parcel": "^2.9.3",
-    "postcss": "^8.5.6",
-    "prettier": "^3.5.3",
-    "prettier-eslint": "^16.4.1",
-    "prettier-eslint-cli": "^8.0.1",
+    "prettier": "^3.0.2",
     "process": "^0.11.10",
-    "rollup": "^3.0.0",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-dts": "^5.0.0",
+    "rollup": "^3.28.0",
+    "rollup-plugin-css-only": "^4.3.0",
+    "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.39.1"
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "browserslist": [
     "> 0.25%",
