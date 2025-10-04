@@ -31,7 +31,7 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     },
-    "./style.css": "./dist/style.css"
+    "./styles.css": "./dist/styles.css"
   },
   "scripts": {
     "dev": "rollup -c --watch",
